@@ -7,10 +7,17 @@ $catetorias[]  = 'adolescente';
 $catetorias[]  = 'adulto';
 $catetorias[]  = 'idoso';
 
-$nome = 'Eduardo'
-$idade = '18'
+$nome = $_POST['nome'];
+$idade = $_POST['idade'];
 
-if($idade >= 6 && $idade <= 12)
+var_dump($nome);
+var_dump($idade);
+
+
+
+
+
+/*if($idade >= 6 && $idade <= 12)
 {
    for(si = 0; $i  <= count($categorias); $i++)
    {
@@ -34,5 +41,6 @@ else
              echo "O nadador " .$nome. "compete na categoria adulto";
 
     }
-}
+}*/
+
 
