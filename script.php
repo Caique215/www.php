@@ -1,4 +1,10 @@
 <?php 
+/**
+* Created by PhpStorm.
+* User: Eduardo.
+* Date: 22/03/2021
+* Time:  21:00
+*/
 
 
 $catetorias = [];
@@ -30,13 +36,13 @@ if(strlen($nome) > 40)
 
 if(!is_numeric($idade))
 {
-    echo "informe um numero para idade";
+    echo "informe um número para idade";
     return;
 }
 
 if($idade >= 6 && $idade <= 12)
 {
-   for(si = 0; $i  <= count($categorias); $i++)
+   for($i = 0; $i  <= count($categorias); $i++)
    {
        if($categorias[$i] == 'infantil')
                  echo "O nadador " .$nome. "compete na categoria". $categorias[$i];
@@ -44,7 +50,7 @@ if($idade >= 6 && $idade <= 12)
 }
 else if($idade >= 13 && $idade <= 18)
 {
-    for(si = 0; $i  <= count($categorias); $i++)
+    for($i = 0; $i  <= count($categorias); $i++)
     {
         if($categorias[$i] == 'adolescente')
         echo "O nadador " .$nome. "compete na categoria adolescente";
@@ -52,7 +58,7 @@ else if($idade >= 13 && $idade <= 18)
 }
 else
 {
-    for(si = 0; $i  <= count($categorias); $i++)
+    for($i = 0; $i  <= count($categorias); $i++)
     {
         if($categorias[$i] == 'adulto')
              echo "O nadador " .$nome. "compete na categoria adulto";
